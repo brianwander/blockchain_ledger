@@ -68,11 +68,7 @@ class Record:
 
 @dataclass
 class Block:
-
-    # @TODO
-    # Rename the `data` attribute to `record`, and set the data type to `Record`
-    record : Record
-
+    record : Record #Record attribute of the block takes in an instance of the Record class.
     creator_id: int
     prev_hash: str = "0"
     timestamp: str = datetime.datetime.utcnow().strftime("%H:%M:%S")
